@@ -1,0 +1,22 @@
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>WEB-INF/context.xml</param-value>
+    </context-param>
+
+  <servlet>
+    <servlet-name>uruleServlet</servlet-name>
+    <servlet-class>com.bstek.urule.console.servlet.URuleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uruleServlet</servlet-name>
+    <url-pattern>/urule/*</url-pattern>
+  </servlet-mapping>
+
+</web-app>
