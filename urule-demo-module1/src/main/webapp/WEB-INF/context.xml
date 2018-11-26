@@ -11,5 +11,7 @@
         </property>
     </bean>
 
+    <bean id="actionTest" class="com.fmrt.action.ActionTest"></bean>
+
 
 </beans>
